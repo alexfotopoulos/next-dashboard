@@ -1,0 +1,44 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.Navbar {
+    width: 25rem;
+    height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    margin: $spacing-xsmall;
+    padding: $spacing-xsmall;
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    color: $white;
+    font-weight: 100;
+    border-radius: $font-small;
+}
+
+.NavbarHeaderSection {
+    display: flex;
+    justify-content: center;
+    padding: $spacing-large 0;
+    border-bottom: 1px solid $white
+}
+
+.NavbarHeader {
+    font-weight: 500
+}
+
+.NavbarListSection {
+    padding: $spacing-large 0;
+}
+
+.NavbarListItem {
+    padding: $spacing-small;
+    margin-bottom: $spacing-small;
+    border-radius: $font-small;
+    transition: all .1s
+}
+
+.NavbarListItem:hover {
+    background-color: $grey;
+}
+
+.NavbarList {
+    list-style: none;
+}
