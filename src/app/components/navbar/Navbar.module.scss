@@ -1,44 +1,75 @@
 @import "../../../../styles/sass/abstracts/variables";
 
 .Navbar {
-    width: 25rem;
-    height: calc(100vh - 2rem);
+    // background-color: palegoldenrod;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    margin: $spacing-xsmall;
-    padding: $spacing-xsmall;
-    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
-    color: $white;
-    font-weight: 100;
-    border-radius: $font-small;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.NavbarHeaderSection {
+.NavbarPath {
     display: flex;
-    justify-content: center;
-    padding: $spacing-large 0;
-    border-bottom: 1px solid $white
+    margin-bottom: $spacing-xxsmall;
+
+    & span {
+        margin-left: $spacing-small;
+    }
 }
 
-.NavbarHeader {
-    font-weight: 500
+.NavbarSectionTwo {
+    display: flex;
+    align-items: center;
+
+    & > * {
+        margin-left: $spacing-small;
+    }
+
+    & button {
+        background-color: $blue;
+        color: $white;
+        padding: $spacing-xsmall $spacing-medium;
+        border: none;
+        border-radius: 1rem;
+
+        &:hover {
+            -webkit-box-shadow: 0px 6px 15px -8px $blue;
+            -moz-box-shadow: 0px 6px 15px -8px $blue;
+            box-shadow: 0px 6px 15px -8px $blue;
+        }
+    }
 }
 
-.NavbarListSection {
-    padding: $spacing-large 0;
-}
+.NavbarSearchGroup {
+    position: relative;
 
-.NavbarListItem {
-    padding: $spacing-small;
-    margin-bottom: $spacing-small;
-    border-radius: $font-small;
-    transition: all .1s
-}
+    & label {
+        position: absolute;
+        top: 1.2rem;
+        left: 1rem;
+        font-size: 1.2rem;
+        color: $grey;
+        transition: all 0.1s;
+    }
 
-.NavbarListItem:hover {
-    background-color: $grey;
-}
+    & input {
+        padding: $spacing-xsmall;
+        padding-right: 0;
+        border: 1px solid rgb(210, 210, 210);
+        border-radius: 0.5rem;
+        background-color: $background-color;
 
-.NavbarList {
-    list-style: none;
+        &:focus {
+            outline: $blue solid 2px;
+
+            & ~ label {
+                top: -0.8rem;
+                left: 0.8rem;
+                z-index: 10;
+                padding: 0 0.2rem;
+                background-color: $background-color;
+                color: $blue;
+            }
+        }
+    }
 }

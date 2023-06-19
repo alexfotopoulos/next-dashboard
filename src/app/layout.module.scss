@@ -1,3 +1,15 @@
+@import "../../styles/sass/abstracts/variables";
+
 .body {
     display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: $spacing-small;
+    padding-top: $spacing-medium;
+    padding-left: $spacing-medium;
+    margin-right: $spacing-medium;
 }
