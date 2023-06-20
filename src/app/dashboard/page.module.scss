@@ -1,0 +1,14 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.page {
+    margin-top: $spacing-large;
+    
+    & > * {
+        margin-bottom: $spacing-large;
+    }
+}
+
+.QuickTileSection {
+    display: flex;
+    justify-content: space-between;
+}

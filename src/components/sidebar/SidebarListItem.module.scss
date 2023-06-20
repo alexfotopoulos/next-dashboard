@@ -1,0 +1,31 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.SidebarListItem {
+    display: flex;
+    align-items: center;
+    padding: $spacing-small;
+    margin-bottom: $spacing-small;
+    border-radius: $font-small;
+    transition: all .1s;
+    text-decoration: none;
+}
+
+.SidebarListItemHL {
+    display: flex;
+    align-items: center;
+    padding: $spacing-small;
+    margin-bottom: $spacing-small;
+    border-radius: $font-small;
+    background-color: $blue;
+    transition: all .1s;
+    text-decoration: none;
+}
+
+.SidebarListItemTitle {
+    margin-left: $spacing-medium;
+    color: $white;
+}
+
+.SidebarListItem:hover {
+    background-color: $grey;
+}

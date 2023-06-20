@@ -13,9 +13,18 @@ export default function Sidebar() {
                         title="Dashboard"
                         icon="dashboard-fill.svg"
                     />
-                    <SidebarListItem title="Tables" icon="table-fill.svg" />
-                    <SidebarListItem title="Billing" icon="bank-card-fill.svg" />
-                    <SidebarListItem title="Profile" icon="user-fill.svg" />
+                    <SidebarListItem
+                        title="Tables"
+                        icon="table-fill.svg"
+                    />
+                    <SidebarListItem
+                        title="Billing"
+                        icon="bank-card-fill.svg"
+                    />
+                    <SidebarListItem
+                        title="Profile"
+                        icon="user-fill.svg"
+                    />
                 </ul>
             </section>
         </nav>

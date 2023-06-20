@@ -1,7 +1,7 @@
 import "./globals.scss";
 import styles from "./layout.module.scss";
-import Sidebar from "./components/sidebar/Sidebar";
-import Navbar from "./components/navbar/Navbar";
+import Sidebar from "../components/sidebar/Sidebar";
+import Navbar from "../components/navbar/Navbar";
 
 export const metadata = {
     title: "Next Dashboard",
