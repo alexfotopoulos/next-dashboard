@@ -2,13 +2,24 @@
 
 .page {
     margin-top: $spacing-large;
-    
+
     & > * {
         margin-bottom: $spacing-large;
     }
 }
 
 .QuickTileSection {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.5rem;
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
 }

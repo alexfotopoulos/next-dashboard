@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .NavbarPath {
@@ -17,11 +21,17 @@
     }
 }
 
+.NavbarSectionOne {
+    @media (max-width: 767px) {
+        align-self: flex-start;
+    }
+}
+
 .NavbarSectionTwo {
     display: flex;
     align-items: center;
 
-    & > * {
+    & > :not(:first-child) {
         margin-left: $spacing-small;
     }
 
@@ -37,6 +47,21 @@
             -moz-box-shadow: 0px 6px 15px -8px $blue;
             box-shadow: 0px 6px 15px -8px $blue;
         }
+    }
+
+    @media (max-width: 767px) {
+        flex: 1;
+        align-self: flex-end;
+    }
+}
+
+.NavbarSectionTwoMenuIcon {
+    display: none;
+    cursor: pointer;
+
+
+    @media (max-width: 1200px) {
+        display: block;
     }
 }
 
@@ -70,6 +95,10 @@
                 background-color: $background-color;
                 color: $blue;
             }
+        }
+
+        @media (max-width: 767px) {
+            
         }
     }
 }

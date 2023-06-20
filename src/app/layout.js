@@ -1,4 +1,5 @@
 import "./globals.scss";
+import { SidebarContextProvider } from "../../store/sidebarContext";
 import styles from "./layout.module.scss";
 import Sidebar from "../components/sidebar/Sidebar";
 import Navbar from "../components/navbar/Navbar";
@@ -13,11 +14,13 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={styles.body}>
-                <Sidebar />
-                <div className={styles.main}>
-                    <Navbar />
-                    {children}
-                </div>
+                <SidebarContextProvider>
+                    <Sidebar />
+                    <div className={styles.main}>
+                        <Navbar />
+                        {children}
+                    </div>
+                </SidebarContextProvider>
             </body>
         </html>
     );

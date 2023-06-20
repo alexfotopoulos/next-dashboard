@@ -1,7 +1,7 @@
 @import "../../../styles/sass/abstracts/variables";
 
 .Sidebar {
-    width: 25rem;
+    min-width: 25rem;
     height: calc(100vh - 2rem);
     display: flex;
     flex-direction: column;
@@ -11,17 +11,58 @@
     color: $white;
     font-weight: 100;
     border-radius: $font-small;
+    transition: all 0.2s;
+    z-index: 10;
+
+    @media (max-width: 1200px) {
+        position: absolute;
+        transform: translateX(-27rem);
+    }
+}
+
+.Sidebar__show {
+    min-width: 25rem;
+    height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    margin: $spacing-xsmall;
+    padding: $spacing-xsmall;
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    color: $white;
+    font-weight: 100;
+    border-radius: $font-small;
+    transition: all 0.2s;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+
+.Sidebar__hide {
+    min-width: 25rem;
+    height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    margin: $spacing-xsmall;
+    padding: $spacing-xsmall;
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    color: $white;
+    font-weight: 100;
+    border-radius: $font-small;
+    transition: all 0.2s;
+    z-index: 10;
+    position: absolute;
+    transform: translateX(-27rem);
 }
 
 .SidebarHeaderSection {
     display: flex;
     justify-content: center;
     padding: $spacing-large 0;
-    border-bottom: 1px solid $white
+    border-bottom: 1px solid $white;
 }
 
 .SidebarHeader {
-    font-weight: 500
+    font-weight: 500;
 }
 
 .SidebarListSection {
@@ -30,4 +71,7 @@
 
 .SidebarList {
     list-style: none;
+}
+
+@media (max-width) {
 }

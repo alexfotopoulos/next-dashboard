@@ -7,7 +7,7 @@
 .main {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 1;
     margin-top: $spacing-small;
     padding-top: $spacing-medium;
     padding-left: $spacing-medium;
