@@ -59,6 +59,14 @@
     justify-content: center;
     padding: $spacing-large 0;
     border-bottom: 1px solid $white;
+    position: relative
+}
+
+.SidebarCloseIcon {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    cursor: pointer;
 }
 
 .SidebarHeader {

@@ -4,6 +4,7 @@ import styles from "./Sidebar.module.scss";
 import SidebarListItem from "./SidebarListItem";
 import { useContext, useState, useEffect } from "react";
 import SidebarContext from "../../../store/sidebarContext";
+import Image from "next/image";
 
 export default function Sidebar() {
     //consume sidebar toggle context
@@ -38,6 +39,11 @@ export default function Sidebar() {
         window.addEventListener("resize", handleResize);
     }, []);
 
+    //function to close sidebar
+    function sidebarToggleHandler() {
+        sidebarCtx.sidebarToggler((prev) => !prev);
+    }
+
     return (
         <nav
             className={
@@ -49,6 +55,14 @@ export default function Sidebar() {
             }
         >
             <header className={styles.SidebarHeaderSection}>
+                {sidebarToggle ? (                <Image
+                    className={styles.SidebarCloseIcon}
+                    src="/icons/sidebar/close-fill.svg"
+                    width={20}
+                    height={20}
+                    alt="close sidebar"
+                    onClick={sidebarToggleHandler}
+                />) : null}
                 <div className={styles.SidebarHeader}>Material Dashboard</div>
             </header>
             <section className={styles.SidebarListSection}>

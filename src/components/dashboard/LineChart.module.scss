@@ -1,0 +1,58 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.LineChart {
+    background-color: white;
+    padding: 2rem;
+    border-radius: $font-default;
+    display: flex;
+    flex-direction: column;
+}
+
+.Chart {
+    align-self: center;
+    height: 20rem;
+    border-radius: $font-default;
+    transform: translateY(-4.5rem);
+    position: relative;
+    width: 20vw;
+
+    @media (max-width: 1200px) {
+        width: 25vw;
+    }
+
+    @media (max-width: 992px) {
+        width: 40vw;
+    }
+
+    @media (max-width: 767px) {
+        width: 80vw;
+    }
+}
+
+.LineChartDetails {
+    display: flex;
+    flex-direction: column;
+    color: $grey;
+    font-weight: lighter;
+}
+
+.LineChartDetailsTitle {
+    color: $black;
+    font-weight: bold;
+    margin-bottom: $spacing-xxsmall;
+}
+
+.LineChartDetailsBlurb {
+    margin-bottom: $spacing-medium;
+}
+
+.LineChartDetailsSummary {
+    margin-top: $spacing-medium;
+    display: flex;
+    align-items: center;
+
+    & span {
+        margin-left: $spacing-xxsmall;
+    }
+}
+
