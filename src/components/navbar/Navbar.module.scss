@@ -1,13 +1,18 @@
 @import "../../../styles/sass/abstracts/variables";
 
 .Navbar {
-    // background-color: palegoldenrod;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 1rem;
+    background-color: $background-color;
+    opacity: .94;
+    z-index: 4;
 
-    @media (max-width: 767px) {
+    @media (max-width: 600px) {
         flex-direction: column;
     }
 }
@@ -49,9 +54,12 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 600px) {
         flex: 1;
         align-self: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: $spacing-xxsmall;
     }
 }
 

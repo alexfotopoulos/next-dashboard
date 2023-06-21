@@ -55,14 +55,16 @@ export default function Sidebar() {
             }
         >
             <header className={styles.SidebarHeaderSection}>
-                {sidebarToggle ? (                <Image
-                    className={styles.SidebarCloseIcon}
-                    src="/icons/sidebar/close-fill.svg"
-                    width={20}
-                    height={20}
-                    alt="close sidebar"
-                    onClick={sidebarToggleHandler}
-                />) : null}
+                {sidebarToggle ? (
+                    <Image
+                        className={styles.SidebarCloseIcon}
+                        src="/icons/sidebar/close-fill.svg"
+                        width={20}
+                        height={20}
+                        alt="close sidebar"
+                        onClick={sidebarToggleHandler}
+                    />
+                ) : null}
                 <div className={styles.SidebarHeader}>Material Dashboard</div>
             </header>
             <section className={styles.SidebarListSection}>
@@ -70,13 +72,23 @@ export default function Sidebar() {
                     <SidebarListItem
                         title="Dashboard"
                         icon="dashboard-fill.svg"
+                        onClick={sidebarToggleHandler}
                     />
-                    <SidebarListItem title="Tables" icon="table-fill.svg" />
+                    <SidebarListItem
+                        title="Tables"
+                        icon="table-fill.svg"
+                        onClick={sidebarToggleHandler}
+                        />
                     <SidebarListItem
                         title="Billing"
                         icon="bank-card-fill.svg"
+                        onClick={sidebarToggleHandler}
                     />
-                    <SidebarListItem title="Profile" icon="user-fill.svg" />
+                    <SidebarListItem
+                        title="Profile"
+                        icon="user-fill.svg"
+                        onClick={sidebarToggleHandler}
+                    />
                 </ul>
             </section>
         </nav>
