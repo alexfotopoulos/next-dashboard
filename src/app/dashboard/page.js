@@ -6,7 +6,7 @@ import QuickTile from "../../components/dashboard/quicktiles/QuickTile";
 import BarChart from "@/components/dashboard/charts/BarChart";
 import LineChart from "@/components/dashboard/charts/LineChart";
 import ProjectTable from "@/components/dashboard/projects/ProjectTable";
-import Timeline from "@/components/dashboard/orders/TimeLine";
+import Timeline from "@/components/dashboard/orders/Timeline";
 import Image from "next/image";
 import {
     barChartData,
