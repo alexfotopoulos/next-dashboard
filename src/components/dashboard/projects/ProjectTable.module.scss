@@ -19,11 +19,11 @@
 
     & tbody {
         text-align: left;
-        
+
         & tr:not(:last-child) {
             border-bottom: 1px solid $lightGrey;
         }
-        
+
         & tr:not(:last-child) td {
             padding: 1.6rem 0;
         }
@@ -32,7 +32,6 @@
             padding-top: 1.6rem;
         }
     }
-
 }
 
 .companyData {
@@ -40,4 +39,9 @@
     align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+.memberContainer {
+    display: flex;
+    align-items: center;
 }

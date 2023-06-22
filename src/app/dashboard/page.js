@@ -6,6 +6,7 @@ import QuickTile from "../../components/dashboard/quicktiles/QuickTile";
 import BarChart from "@/components/dashboard/charts/BarChart";
 import LineChart from "@/components/dashboard/charts/LineChart";
 import ProjectTable from "@/components/dashboard/projects/ProjectTable";
+import Timeline from "@/components/dashboard/orders/TimeLine";
 import Image from "next/image";
 import {
     barChartData,
@@ -134,23 +135,58 @@ export default function Dashboard() {
                                 style={{ cursor: "pointer" }}
                                 onClick={togglePopUpHandler}
                             />
-                            {showPopupMenu && (<div className={styles.popupMenu}>
-                                <div className={styles.popupMenuItem} onClick={togglePopUpHandler}>
-                                    action
+                            {showPopupMenu && (
+                                <div className={styles.popupMenu}>
+                                    <div
+                                        className={styles.popupMenuItem}
+                                        onClick={togglePopUpHandler}
+                                    >
+                                        action
+                                    </div>
+                                    <div
+                                        className={styles.popupMenuItem}
+                                        onClick={togglePopUpHandler}
+                                    >
+                                        another action
+                                    </div>
+                                    <div
+                                        className={styles.popupMenuItem}
+                                        onClick={togglePopUpHandler}
+                                    >
+                                        something else
+                                    </div>
                                 </div>
-                                <div className={styles.popupMenuItem} onClick={togglePopUpHandler}>
-                                    another action
-                                </div>
-                                <div className={styles.popupMenuItem} onClick={togglePopUpHandler}>
-                                    something else
-                                </div>
-                            </div>)}
+                            )}
                         </header>
                     </div>
                     <ProjectTable />
                 </section>
                 <section className={styles.OrdersSection}>
-                    orders overview
+                    <div className={styles.OrdersHeader}>
+                        <header>
+                            <div className={styles.OrdersHeaderSection1}>
+                                <span className={styles.OrdersHeaderTitle}>
+                                    Orders overview
+                                </span>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <Image
+                                        src="/icons/dashboard/orders/arrow-up-line.svg"
+                                        width={20}
+                                        height={20}
+                                        alt="up arrow"
+                                        style={{ marginRight: ".5rem" }}
+                                    />
+                                    24% this month
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <Timeline />
                 </section>
             </div>
         </div>

@@ -1,0 +1,14 @@
+.Member {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin: -.4rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

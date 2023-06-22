@@ -1,0 +1,29 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.TimelineItem {
+    display: flex;
+    margin-bottom: $spacing-large;
+}
+
+.imageContainer {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: $spacing-small;
+    background-color: slategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    font-weight: 400;
+}
+
+.dateTime {
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin-top: $spacing-xxsmall;
+    color: $grey;
+    letter-spacing: .1rem;
+}
