@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Billing() {
-  return (
-    <div>billing</div>
-  )
+    return <div>UNDER CONSTRUCTION</div>;
 }
