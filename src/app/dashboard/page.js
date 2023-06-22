@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import styles from "./page.module.scss";
-import QuickTile from "../../components/dashboard/QuickTile";
-import BarChart from "@/components/dashboard/BarChart";
-import LineChart from "@/components/dashboard/LineChart";
+import QuickTile from "../../components/dashboard/quicktiles/QuickTile";
+import BarChart from "@/components/dashboard/charts/BarChart";
+import LineChart from "@/components/dashboard/charts/LineChart";
+import ProjectTable from "@/components/dashboard/projects/ProjectTable";
+import Image from "next/image";
 import {
     barChartData,
     barChartOptions,
@@ -12,6 +17,14 @@ import {
 } from "../../../helpers/chartConfigs/lineChartConfig1";
 
 export default function Dashboard() {
+    //state to determine if popup menu in project section should be visible
+    const [showPopupMenu, setShowPopupMenu] = useState(false);
+
+    //function to show popup menu
+    function togglePopUpHandler() {
+        setShowPopupMenu((prev) => !prev);
+    }
+
     return (
         <div className={styles.page}>
             <section className={styles.QuickTileSection}>
@@ -89,9 +102,56 @@ export default function Dashboard() {
                     bgColor="linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))"
                 />
             </section>
-            <div>
-                <section>projects</section>
-                <section>orders overview</section>
+            <div className={styles.ProjectsAndOrdersContainer}>
+                <section className={styles.ProjectsSection}>
+                    <div className={styles.ProjectsHeader}>
+                        <header>
+                            <div className={styles.ProjectsHeaderSection1}>
+                                <span className={styles.ProjectsHeaderTitle}>
+                                    Projects
+                                </span>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <Image
+                                        src="/icons/dashboard/projects/check-fill.svg"
+                                        width={20}
+                                        height={20}
+                                        alt="checkmart"
+                                        style={{ marginRight: ".5rem" }}
+                                    />
+                                    30 done this month
+                                </div>
+                            </div>
+                            <Image
+                                src="/icons/dashboard/projects/more-2-fill.svg"
+                                width={20}
+                                height={20}
+                                alt="more"
+                                style={{ cursor: "pointer" }}
+                                onClick={togglePopUpHandler}
+                            />
+                            {showPopupMenu && (<div className={styles.popupMenu}>
+                                <div className={styles.popupMenuItem} onClick={togglePopUpHandler}>
+                                    action
+                                </div>
+                                <div className={styles.popupMenuItem} onClick={togglePopUpHandler}>
+                                    another action
+                                </div>
+                                <div className={styles.popupMenuItem} onClick={togglePopUpHandler}>
+                                    something else
+                                </div>
+                            </div>)}
+                        </header>
+                    </div>
+                    <ProjectTable />
+                </section>
+                <section className={styles.OrdersSection}>
+                    orders overview
+                </section>
             </div>
         </div>
     );

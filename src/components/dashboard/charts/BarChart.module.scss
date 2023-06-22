@@ -1,11 +1,12 @@
-@import "../../../styles/sass/abstracts/variables";
+@import "../../../../styles/sass/abstracts/variables";
 
-.LineChart {
+.BarChart {
     background-color: white;
     padding: 2rem;
     border-radius: $font-default;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 4px 6px 0px rgba(168,168,168,1);
 }
 
 .Chart {
@@ -29,24 +30,24 @@
     }
 }
 
-.LineChartDetails {
+.BarChartDetails {
     display: flex;
     flex-direction: column;
     color: $grey;
     font-weight: lighter;
 }
 
-.LineChartDetailsTitle {
+.BarChartDetailsTitle {
     color: $black;
     font-weight: bold;
     margin-bottom: $spacing-xxsmall;
 }
 
-.LineChartDetailsBlurb {
+.BarChartDetailsBlurb {
     margin-bottom: $spacing-medium;
 }
 
-.LineChartDetailsSummary {
+.BarChartDetailsSummary {
     margin-top: $spacing-medium;
     display: flex;
     align-items: center;

@@ -1,0 +1,43 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.ProjectTable {
+    width: 100%;
+    margin-top: $spacing-large;
+    color: $grey;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+
+    & thead tr {
+        text-align: left;
+        border-bottom: 1px solid $lightGrey;
+
+        & th {
+            margin-left: auto;
+            padding-bottom: 1.6rem;
+        }
+    }
+
+    & tbody {
+        text-align: left;
+        
+        & tr:not(:last-child) {
+            border-bottom: 1px solid $lightGrey;
+        }
+        
+        & tr:not(:last-child) td {
+            padding: 1.6rem 0;
+        }
+
+        & tr:last-child td {
+            padding-top: 1.6rem;
+        }
+    }
+
+}
+
+.companyData {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
