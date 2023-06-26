@@ -1,9 +1,9 @@
-import styles from "./ProjectTable.module.scss";
+import styles from "./ProjectSectionTable.module.scss";
 import Image from "next/image";
 import ProgressBar from "./ProgressBar";
 import Member from "./Member";
 
-export default function ProjectTable() {
+export default function ProjectSectionTable() {
     return (
             <table className={styles.ProjectTable}>
                 <thead className={styles.ProjectTableHead}>

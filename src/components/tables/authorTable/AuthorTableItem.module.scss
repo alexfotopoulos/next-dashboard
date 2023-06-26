@@ -1,0 +1,39 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.author {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    margin-right: 1rem;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: $spacing-xxsmall;
+}
+
+.role {
+    font-weight: bold;
+}
+
+.online {
+    width: min-content;
+    padding: .5rem .5rem;
+    border-radius: .7rem;
+    font-size: $font-small;
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+    color: white;
+}
+
+.offline {
+    width: min-content;
+    padding: .5rem .5rem;
+    border-radius: .7rem;
+    font-size: $font-small;
+    background-color: black;
+    color: white;
+}

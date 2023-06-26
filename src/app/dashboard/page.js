@@ -5,7 +5,7 @@ import styles from "./page.module.scss";
 import QuickTile from "../../components/dashboard/quicktiles/QuickTile";
 import BarChart from "@/components/dashboard/charts/BarChart";
 import LineChart from "@/components/dashboard/charts/LineChart";
-import ProjectTable from "@/components/dashboard/projects/ProjectTable";
+import ProjectSectionTable from "@/components/dashboard/projects/ProjectSectionTable";
 import Timeline from "@/components/dashboard/orders/Timeline";
 import Image from "next/image";
 import {
@@ -159,7 +159,7 @@ export default function Dashboard() {
                             )}
                         </header>
                     </div>
-                    <ProjectTable />
+                    <ProjectSectionTable />
                 </section>
                 <section className={styles.OrdersSection}>
                     <div className={styles.OrdersHeader}>
