@@ -1,7 +1,7 @@
 import styles from "./page.module.scss";
 import Image from "next/image";
 import BillingTile from "@/components/billing/BillingTile";
-import LngBtnBlack from "@/components/billing/buttons/lngBtnBlack";
+import LngBtnBlack from "@/components/billing/buttons/LngBtnBlack";
 import Method from "@/components/billing/Method";
 
 export default function Billing() {
