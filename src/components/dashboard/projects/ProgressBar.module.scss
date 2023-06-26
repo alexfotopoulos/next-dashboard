@@ -3,14 +3,14 @@
 .ProgressBar {
     width: 100%;
     height: .5rem;
-    border-radius: 1rem;
+    border-radius: $border-radius-small;
     background-color: rgb(220, 224, 230);
     position: relative;
 }
 
 .Progress {
     height: .5rem;
-    border-radius: 1rem;
+    border-radius: $border-radius-small;
     position: absolute;
     z-index: 1;
 }

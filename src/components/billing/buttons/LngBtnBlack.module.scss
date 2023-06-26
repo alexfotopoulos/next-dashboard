@@ -1,0 +1,12 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.LngBtnBlack {
+    background-image: $gradient-black;
+    color: $white;
+    margin-bottom: $spacing-small;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: $border-radius-xsmall;
+    box-shadow: $shadow-soft;
+    cursor: pointer;
+}

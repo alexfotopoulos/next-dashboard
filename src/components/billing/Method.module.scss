@@ -1,0 +1,26 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.method {
+    border: 1px solid $lightGrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: $border-radius-small;
+
+    &:not(:last-of-type) {
+        @media (max-width: 767px) {
+            margin-bottom: $spacing-small;
+        }
+    }
+
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.hiddenText {
+    margin-right: $spacing-small;
+}

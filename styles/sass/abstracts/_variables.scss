@@ -1,12 +1,17 @@
 //colors
 $background-color: rgb(240, 242, 245);
 $white: rgb(244, 244, 244);
-$lightGrey: rgb(240, 242, 245);
+$lightGrey: rgb(222, 226, 230);
 $grey: rgb(109, 109, 109);
 $blue: rgb(26, 115, 232);
 $black: rgb(25, 25, 25);
 $green: rgb(67, 160, 71);
 $pink: rgb(216, 27, 96);
+
+//gradients
+$gradient-blue: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+$gradient-black: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+$gradient-green: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
 
 //spacing
 $spacing-xxsmall: .5rem;
@@ -26,3 +31,12 @@ $font-xlarge: 5rem;
 
 //utilities
 $border-radius: 1.6rem;
+$border-radius-xsmall: .7rem;
+$border-radius-small: 1rem;
+
+//shadows
+$shadow-std: 0px 4px 6px 0px rgba(168,168,168,1);
+$shadow-soft: 0px 6px 15px -8px rgb(25, 25, 25);
+$shadow-blue: 0px 6px 15px -8px rgb(26, 115, 232);
+$shadow-pink: 0px 6px 15px -8px rgb(216, 27, 96);
+$shadow-green: 0px 6px 15px -8px rgb(67, 160, 71);

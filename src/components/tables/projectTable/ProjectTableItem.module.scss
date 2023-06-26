@@ -16,16 +16,16 @@
 .online {
     width: min-content;
     padding: 0.5rem 0.5rem;
-    border-radius: 0.7rem;
+    border-radius: $border-radius-xsmall;
     font-size: $font-small;
-    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+    background: $gradient-green;
     color: white;
 }
 
 .offline {
     width: min-content;
     padding: 0.5rem 0.5rem;
-    border-radius: 0.7rem;
+    border-radius: $border-radius-xsmall;
     font-size: $font-small;
     background-color: black;
     color: white;

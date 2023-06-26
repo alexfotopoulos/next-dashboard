@@ -3,10 +3,10 @@
 .TableHeader {
     width: 98%;
     padding: 3rem 2rem;
-    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+    background: $gradient-blue;
     color: $white;
     border-radius: $border-radius;
-    box-shadow: 0px 6px 15px -8px rgb(26, 115, 232);
+    box-shadow: $shadow-blue;
     position: absolute;
     top: -2rem;
 }

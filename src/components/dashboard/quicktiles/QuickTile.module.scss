@@ -3,9 +3,9 @@
 .QuickTile {
     position: relative;
     padding: $spacing-medium;
-    border-radius: $font-default;
+    border-radius: $border-radius;
     background-color: white;
-    box-shadow: 0px 4px 6px 0px rgba(168,168,168,1);
+    box-shadow: $shadow-std;
 }
 
 .QuickTileDetails {
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     padding: $spacing-medium;
-    border-radius: $font-default;
+    border-radius: $border-radius;
 }
 
 .detailsContainer {

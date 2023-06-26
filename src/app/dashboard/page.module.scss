@@ -53,8 +53,8 @@
     background-color: white;
     flex: 2;
     padding: $spacing-medium;
-    border-radius: $font-default;
-    box-shadow: 0px 4px 6px 0px rgba(168,168,168,1);
+    border-radius: $border-radius;
+    box-shadow: $shadow-std;
 
     & header {
         display: flex;
@@ -84,18 +84,18 @@
 .popupMenu {
     position: absolute;
     background-color: white;
-    border-radius: $font-default;
+    border-radius: $border-radius;
     top: 1rem;
     right: 2rem;
     padding: $spacing-xxsmall;
-    box-shadow: 0px 4px 6px 0px rgba(168,168,168,1);
+    box-shadow: $shadow-std;
 }
 
 .popupMenuItem {
     text-transform: capitalize;
     padding: $spacing-xsmall;
     transition: all .2s;
-    border-radius: 1rem;
+    border-radius: $border-radius-small;
 
     &:hover {
         background-color: $lightGrey;
@@ -107,9 +107,9 @@
     flex: 1;
     background-color: white;
     padding: $spacing-medium;
-    border-radius: $font-default;
+    border-radius: $border-radius;
     margin-left: $spacing-medium;
-    box-shadow: 0px 4px 6px 0px rgba(168,168,168,1);
+    box-shadow: $shadow-std;
 
     & header {
         display: flex;
