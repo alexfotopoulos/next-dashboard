@@ -153,7 +153,7 @@
     border-radius: $border-radius;
     box-shadow: $shadow-std;
     color: $grey;
-    
+
     @media (max-width: 992px) {
         grid-column: 1 / 6;
         margin-top: $spacing-medium;

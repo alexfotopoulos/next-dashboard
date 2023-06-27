@@ -34,6 +34,7 @@ export default function ProjectSectionTable() {
                             <div className={styles.memberContainer}>
                                 {t.members.map((m) => (
                                     <Member
+                                        key={Math.random()}
                                         initial={m.initial}
                                         color={m.color}
                                     />
