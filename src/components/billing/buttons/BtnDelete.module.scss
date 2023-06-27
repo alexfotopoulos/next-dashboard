@@ -1,0 +1,25 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.BtnDelete {
+    display: flex;
+    align-items: center;
+    color: $red;
+    border: 1px solid transparent;
+    border-radius: $border-radius-xsmall;
+    padding: 1rem 2rem;
+    font-size: $font-small;
+    transition: all 0.2s;
+
+    &:hover {
+        border: 1px solid $red;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: rgba(244, 67, 53, 0.2);
+    }
+}
+
+.text {
+    margin-left: $spacing-xxsmall;
+}

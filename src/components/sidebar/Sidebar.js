@@ -78,7 +78,7 @@ export default function Sidebar() {
                         title="Tables"
                         icon="table-fill.svg"
                         onClick={sidebarToggleHandler}
-                        />
+                    />
                     <SidebarListItem
                         title="Billing"
                         icon="bank-card-fill.svg"

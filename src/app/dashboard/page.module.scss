@@ -45,7 +45,7 @@
     display: flex;
 
     @media (max-width: 767px) {
-        flex-direction: column;;
+        flex-direction: column;
     }
 }
 
@@ -65,14 +65,13 @@
     }
 
     @media (max-width: 992px) {
-        flex: 1
+        flex: 1;
     }
 }
 
 .ProjectsHeaderSection1 {
     display: flex;
     flex-direction: column;
-
 }
 
 .ProjectsHeaderTitle {
@@ -94,7 +93,7 @@
 .popupMenuItem {
     text-transform: capitalize;
     padding: $spacing-xsmall;
-    transition: all .2s;
+    transition: all 0.2s;
     border-radius: $border-radius-small;
 
     &:hover {
@@ -128,7 +127,6 @@
 .OrdersHeaderSection1 {
     display: flex;
     flex-direction: column;
-
 }
 
 .OrdersHeaderTitle {

@@ -1,0 +1,35 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.Transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-small;
+    margin-bottom: $spacing-medium;
+}
+
+.section1 {
+    display: flex;
+}
+
+.imageContainer {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: $spacing-medium;
+}
+
+.company {
+    font-weight: bold;
+    color: $black;
+    letter-spacing: 0.05rem;
+    margin-bottom: $spacing-xxsmall;
+}
+
+.amount {
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}

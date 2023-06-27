@@ -1,0 +1,25 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.BtnEdit {
+    display: flex;
+    align-items: center;
+    color: $iconBlue;
+    border: 1px solid transparent;
+    border-radius: $border-radius-xsmall;
+    padding: 1rem 2rem;
+    font-size: $font-small;
+    transition: all 0.2s;
+
+    &:hover {
+        border: 1px solid $iconBlue;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: rgba(101, 139, 188, 0.2);
+    }
+}
+
+.text {
+    margin-left: $spacing-xxsmall;
+}

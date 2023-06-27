@@ -5,8 +5,11 @@
     color: $white;
     margin-bottom: $spacing-small;
     padding: 1.25rem 2.5rem;
-    font-size: 1.2rem;
+    font-size: $font-small;
     border-radius: $border-radius-xsmall;
     box-shadow: $shadow-soft;
-    cursor: pointer;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

@@ -15,8 +15,8 @@ export default function AuthorTable({ thTitles, data }) {
                     </tr>
                 </thead>
                 <tbody className={styles.AuthorTableBody}>
-                    {data.map(d => (
-                        <AuthorTableItem key={d.author.name} data={d}/>
+                    {data.map((d) => (
+                        <AuthorTableItem key={d.author.name} data={d} />
                     ))}
                 </tbody>
             </table>

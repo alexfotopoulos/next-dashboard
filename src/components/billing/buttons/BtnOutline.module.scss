@@ -1,0 +1,14 @@
+@import "../../../../styles/sass/abstracts/variables";
+
+.BtnOutline {
+    color: $blue;
+    padding: 1.25rem 2.5rem;
+    font-size: $font-small;
+    border: 1px solid $blue;
+    border-radius: $border-radius-xsmall;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.75;
+    }
+}

@@ -1,8 +1,8 @@
 import styles from "./page.module.scss";
 import AuthorTable from "@/components/tables/authorTable/AuthorTable";
 import ProjectTable from "@/components/tables/projectTable/ProjectTable";
-import { authorTable } from "../../../helpers/dummyData/authorTable";
-import { projectTable } from "../../../helpers/dummyData/projectTable";
+import { authorTable } from "../../../helpers/dummyData/tablesPage/authorTable";
+import { projectTable } from "../../../helpers/dummyData/tablesPage/projectTable";
 
 export default function Tables() {
     return (

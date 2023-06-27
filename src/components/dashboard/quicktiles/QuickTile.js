@@ -33,7 +33,10 @@ export default function QuickTile({
             </div>
             <hr />
             <div className={styles.summary}>
-            <span className={styles.summaryText}><span className={styles.percent}>{percent}</span> {summaryText}</span>
+                <span className={styles.summaryText}>
+                    <span className={styles.percent}>{percent}</span>{" "}
+                    {summaryText}
+                </span>
             </div>
         </article>
     );

@@ -9,7 +9,7 @@ export default function Method({ icon, last4 }) {
                     src={`/icons/billing/methods/${icon}`}
                     width={30}
                     height={30}
-                    style={{marginRight: "1rem"}}
+                    style={{ marginRight: "1rem" }}
                 />
                 <div>
                     <span className={styles.hiddenText}>****</span>
@@ -19,11 +19,11 @@ export default function Method({ icon, last4 }) {
                 </div>
             </div>
             <Image
-                    src='/icons/billing/methods/pencil-fill.svg'
-                    width={20}
-                    height={20}
-                    style={{marginRight: "1rem", cursor: "pointer"}}
-                />
+                src="/icons/billing/methods/pencil-fill.svg"
+                width={20}
+                height={20}
+                style={{ marginRight: "1rem", cursor: "pointer" }}
+            />
         </div>
     );
 }

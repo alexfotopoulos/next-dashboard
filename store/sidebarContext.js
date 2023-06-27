@@ -24,7 +24,7 @@ export function SidebarContextProvider({ children }) {
     const context = {
         showSidebar,
         sidebarToggler,
-        sidebarToggleDisable
+        sidebarToggleDisable,
     };
 
     return (

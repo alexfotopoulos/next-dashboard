@@ -7,6 +7,8 @@ $blue: rgb(26, 115, 232);
 $black: rgb(25, 25, 25);
 $green: rgb(67, 160, 71);
 $pink: rgb(216, 27, 96);
+$red: rgb(244, 67, 53);
+$iconBlue: rgb(101, 139, 188);
 
 //gradients
 $gradient-blue: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
@@ -14,7 +16,7 @@ $gradient-black: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
 $gradient-green: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
 
 //spacing
-$spacing-xxsmall: .5rem;
+$spacing-xxsmall: 0.5rem;
 $spacing-xsmall: 1rem;
 $spacing-small: 1.5rem;
 $spacing-medium: 2rem;
@@ -23,7 +25,7 @@ $spacing-xlarge: 4rem;
 $spacing-xxlarge: 5rem;
 
 //font size
-$font-small: 1rem;
+$font-small: 1.2rem;
 $font-default: 1.6rem;
 $font-medium: 2.5rem;
 $font-large: 3.5rem;
@@ -31,11 +33,11 @@ $font-xlarge: 5rem;
 
 //utilities
 $border-radius: 1.6rem;
-$border-radius-xsmall: .7rem;
+$border-radius-xsmall: 0.7rem;
 $border-radius-small: 1rem;
 
 //shadows
-$shadow-std: 0px 4px 6px 0px rgba(168,168,168,1);
+$shadow-std: 0px 4px 6px 0px rgba(168, 168, 168, 1);
 $shadow-soft: 0px 6px 15px -8px rgb(25, 25, 25);
 $shadow-blue: 0px 6px 15px -8px rgb(26, 115, 232);
 $shadow-pink: 0px 6px 15px -8px rgb(216, 27, 96);

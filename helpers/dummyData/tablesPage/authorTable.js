@@ -15,7 +15,7 @@ export const authorTable = [
             department: "Organization",
         },
         status: "ONLINE",
-        employed: "23/04/18"
+        employed: "23/04/18",
     },
     {
         author: {
@@ -28,7 +28,7 @@ export const authorTable = [
             department: "Developer",
         },
         status: "OFFLINE",
-        employed: "11/01/19"
+        employed: "11/01/19",
     },
     {
         author: {
@@ -41,7 +41,7 @@ export const authorTable = [
             department: "Projects",
         },
         status: "ONLINE",
-        employed: "19/19/17"
+        employed: "19/19/17",
     },
     {
         author: {
@@ -54,7 +54,7 @@ export const authorTable = [
             department: "Developer",
         },
         status: "ONLINE",
-        employed: "24/12/18"
+        employed: "24/12/18",
     },
     {
         author: {
@@ -67,7 +67,7 @@ export const authorTable = [
             department: "Executive",
         },
         status: "OFFLINE",
-        employed: "04/10/21"
+        employed: "04/10/21",
     },
     {
         author: {
@@ -80,6 +80,6 @@ export const authorTable = [
             department: "Developer",
         },
         status: "OFFLINE",
-        employed: "14/09/20"
+        employed: "14/09/20",
     },
 ];

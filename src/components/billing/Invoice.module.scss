@@ -1,0 +1,44 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.Invoice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $grey;
+    font-weight: 100;
+    margin: 1rem 0 2rem 0;
+}
+
+.InvoiceSection1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: $spacing-xxsmall;
+    color: $black;
+    letter-spacing: 0.025rem;
+}
+
+.code {
+    font-size: $font-small;
+}
+
+.InvoiceSection2 {
+    display: flex;
+}
+
+.pdfContainer {
+    margin-left: $spacing-medium;
+    display: flex;
+    align-items: center;
+
+    & span {
+        margin-left: $spacing-xxsmall;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+}

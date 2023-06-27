@@ -24,7 +24,15 @@ export default function AuthorTableItem({ data }) {
                 <div>{data.function.department}</div>
             </td>
             <td>
-                <div className={data.status === "ONLINE" ? styles.online : styles.offline}>{data.status}</div>
+                <div
+                    className={
+                        data.status === "ONLINE"
+                            ? styles.online
+                            : styles.offline
+                    }
+                >
+                    {data.status}
+                </div>
             </td>
             <td>{data.employed}</td>
             <td style={{ fontWeight: "bold", textAlign: "center" }}>Edit</td>
