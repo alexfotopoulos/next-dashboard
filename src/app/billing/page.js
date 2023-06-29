@@ -18,7 +18,7 @@ import {
 
 export default function Billing() {
     return (
-        <div>
+        <div className={styles.page}>
             <section className={styles.section1}>
                 <div className={styles.section1subsection1}>
                     <div className={styles.subSection1section1}>

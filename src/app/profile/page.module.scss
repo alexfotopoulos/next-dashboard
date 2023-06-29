@@ -1,0 +1,223 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.page {
+    margin-top: $spacing-medium;
+}
+
+.backgroundImage {
+    height: 20rem;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(73, 163, 241, 0.6),
+            rgba(26, 115, 232, 0.6)
+        ),
+        url("../../../public/images/profile/valley.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: $border-radius;
+}
+
+.Profile {
+    width: 94%;
+    margin: auto;
+    padding: $spacing-small $spacing-medium;
+    z-index: 1;
+    transform: translateY(-4rem);
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: $shadow-std;
+    color: $grey-text;
+    font-weight: 100;
+}
+
+.ProfileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-xxlarge;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.ProfileHeaderName {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        align-self: flex-start;
+        margin-bottom: $spacing-medium;
+    }
+}
+
+.initialContainer {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #0a9396;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: $spacing-medium;
+}
+
+.name {
+    font-weight: bold;
+    color: $black;
+    margin-bottom: $spacing-xxsmall;
+}
+
+.HeaderButtonGroup {
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 242, 242);
+    border-radius: $border-radius-small;
+    padding: 0.5rem;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.HeaderButton {
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius-small;
+    transition: all 0.2s;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 992px) {
+        padding: 1rem 3rem;
+    }
+
+    @media (max-width: 767px) {
+        padding: 1rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.profileMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    font-size: $font-small;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.platformSettings {
+    border-right: 1px solid $lightGrey;
+    padding: 0 $spacing-xsmall;
+
+    @media (max-width: 767px) {
+        border-right: none;
+    }
+}
+
+.platformSettingsHeader {
+    font-size: $font-default;
+    font-weight: bold;
+    margin-bottom: $spacing-medium;
+    color: black;
+}
+
+.settingsSubSection {
+    margin-bottom: $spacing-large;
+
+    & input {
+        margin-bottom: $spacing-small;
+        margin-right: $spacing-small;
+    }
+}
+
+.platformSettingsSubHeader {
+    font-weight: bold;
+    margin-bottom: $spacing-small;
+}
+
+.profileInformation {
+    border-right: 1px solid $lightGrey;
+    padding: 0 $spacing-xsmall;
+
+    @media (max-width: 1200px) {
+        border-right: none;
+    }
+}
+
+.profileInformationHeader {
+    font-size: $font-default;
+    font-weight: bold;
+    margin-bottom: $spacing-medium;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileInformationSummary {
+    line-height: 2rem;
+    margin-bottom: $spacing-large;
+}
+
+.infoGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-small;
+}
+
+.infoField {
+    font-weight: bold;
+    margin-right: $spacing-xsmall;
+}
+
+.conversations {
+    padding: 0 $spacing-xsmall;
+
+    @media (max-width: 1200px) {
+        margin-top: $spacing-medium;
+    }
+}
+
+.conversationsHeader {
+    font-size: $font-default;
+    font-weight: bold;
+    margin-bottom: $spacing-medium;
+    color: black;
+}
+
+.projectsHeader {
+    font-size: $font-default;
+    font-weight: bold;
+    margin-bottom: $spacing-medium;
+    color: black;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}

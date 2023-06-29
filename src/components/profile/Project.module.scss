@@ -1,0 +1,38 @@
+@import "../../../styles/sass/abstracts/variables";
+
+.Project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ProjectImage {
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius-small;
+    box-shadow: $shadow-soft;
+    margin-bottom: $spacing-medium;
+}
+
+.ProjectTitle {
+    font-size: $font-medium;
+    font-weight: bold;
+    color: $black;
+    margin: $spacing-medium 0;
+}
+
+.ProjectText {
+    margin-bottom: $spacing-medium;
+}
+
+.ButtonMembersContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.memberContainer {
+    display: flex;
+    align-items: center;
+    margin-left: $spacing-small;
+}

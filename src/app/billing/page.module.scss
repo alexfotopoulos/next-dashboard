@@ -1,5 +1,9 @@
 @import "../../../styles/sass/abstracts/variables";
 
+.page {
+    margin-top: $spacing-medium;
+}
+
 .section1 {
     // border: 1px solid red;
     display: grid;
