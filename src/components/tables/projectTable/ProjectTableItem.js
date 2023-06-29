@@ -7,7 +7,12 @@ export default function ProjectTableItem({ data }) {
         <tr key={data.project.name}>
             <td>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                    <Image src={data.project.icon} width={30} height={30} />
+                    <Image
+                        src={data.project.icon}
+                        width={30}
+                        height={30}
+                        alt="icon"
+                    />
                     <div className={styles.name}>{data.project.name}</div>
                 </div>
             </td>

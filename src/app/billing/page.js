@@ -27,6 +27,7 @@ export default function Billing() {
                                 src="/icons/billing/card/wifi-fill.svg"
                                 width={20}
                                 height={20}
+                                alt="nfc icon"
                             />
                             <span className={styles.cardNumber}>
                                 <span>4562</span>
@@ -53,6 +54,7 @@ export default function Billing() {
                                     src="/icons/billing/card/mastercard-fill.svg"
                                     width={40}
                                     height={40}
+                                    alt="mastercard icon"
                                 />
                             </div>
                         </div>
@@ -137,6 +139,7 @@ export default function Billing() {
                                 src="/icons/billing/transactions/calendar-2-fill.svg"
                                 width={20}
                                 height={20}
+                                alt="calendar icon"
                             />
                             <div style={{ marginLeft: ".5rem" }}>
                                 23 - 30 March 2020

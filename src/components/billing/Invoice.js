@@ -15,6 +15,7 @@ export default function Invoice({ date, code, price }) {
                         src="/icons/billing/invoices/file-pdf-line.svg"
                         width={20}
                         height={20}
+                        alt="pdf icon"
                     />
                     <span>PDF</span>
                 </div>

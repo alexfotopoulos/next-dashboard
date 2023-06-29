@@ -21,6 +21,7 @@ export default function Transaction({ company, date, icon, amount }) {
                         src={`/icons/billing/transactions/${icon}`}
                         width={20}
                         height={20}
+                        alt="icon"
                     />
                 </div>
                 <div>

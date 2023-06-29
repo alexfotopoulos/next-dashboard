@@ -51,6 +51,7 @@ export default function Profile() {
                                 width={18}
                                 height={18}
                                 style={{ marginRight: ".5rem" }}
+                                alt="home icon"
                             />
                             <div>App</div>
                         </div>
@@ -68,6 +69,7 @@ export default function Profile() {
                                 width={18}
                                 height={18}
                                 style={{ marginRight: ".5rem" }}
+                                alt="mail icon"
                             />
                             <div>Message</div>
                         </div>
@@ -87,6 +89,7 @@ export default function Profile() {
                                 width={18}
                                 height={18}
                                 style={{ marginRight: ".5rem" }}
+                                alt="settings icon"
                             />
                             <div>Settings</div>
                         </div>
@@ -126,6 +129,7 @@ export default function Profile() {
                                 width={15}
                                 height={15}
                                 style={{ cursor: "pointer" }}
+                                alt="edit icon"
                             />
                         </div>
                         <p className={styles.profileInformationSummary}>
@@ -161,17 +165,20 @@ export default function Profile() {
                                     width={20}
                                     height={20}
                                     style={{ marginRight: "1rem" }}
+                                    alt="facebook icon"
                                 />
                                 <Image
                                     src="/icons/profile/profileInfo/twitter-fill.svg"
                                     width={20}
                                     height={20}
                                     style={{ marginRight: "1rem" }}
+                                    alt="twitter icon"
                                 />
                                 <Image
                                     src="/icons/profile/profileInfo/instagram-line.svg"
                                     width={20}
                                     height={20}
+                                    alt="instagram icon"
                                 />
                             </div>
                         </div>

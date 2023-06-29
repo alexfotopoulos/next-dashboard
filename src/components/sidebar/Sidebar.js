@@ -23,7 +23,7 @@ export default function Sidebar() {
             setSidebarToggle(false);
             sidebarCtx.sidebarToggleDisable();
         }
-    }, []);
+    }, [sidebarCtx]);
     //change sidebar class as user changes width of screen
     useEffect(() => {
         function handleResize() {

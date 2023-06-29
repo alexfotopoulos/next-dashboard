@@ -10,6 +10,7 @@ export default function Method({ icon, last4 }) {
                     width={30}
                     height={30}
                     style={{ marginRight: "1rem" }}
+                    alt="icon"
                 />
                 <div>
                     <span className={styles.hiddenText}>****</span>
@@ -23,6 +24,7 @@ export default function Method({ icon, last4 }) {
                 width={20}
                 height={20}
                 style={{ marginRight: "1rem", cursor: "pointer" }}
+                alt="edit icon"
             />
         </div>
     );

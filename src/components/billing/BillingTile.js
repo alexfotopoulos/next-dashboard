@@ -9,6 +9,7 @@ export default function BillingTile({ icon, title, blurb, amount }) {
                     src={`/icons/billing/tiles/${icon}`}
                     width={25}
                     height={25}
+                    alt="icon"
                 />
             </div>
             <div>

@@ -11,6 +11,7 @@ export default function Project({ image, headerText, title, text }) {
                 width={500}
                 height={500}
                 className={styles.ProjectImage}
+                alt={`${title} image`}
             />
             <div>{headerText}</div>
             <div className={styles.ProjectTitle}>{title}</div>
