@@ -11,7 +11,7 @@ export default function Transaction({ company, date, icon, amount }) {
         color = "rgb(25, 25, 25)";
     }
     return (
-        <div className={styles.Transaction}>
+        <article className={styles.Transaction}>
             <div className={styles.section1}>
                 <div
                     className={styles.imageContainer}
@@ -32,6 +32,6 @@ export default function Transaction({ company, date, icon, amount }) {
             <div className={styles.amount} style={{ color: color }}>
                 {amount}
             </div>
-        </div>
+        </article>
     );
 }

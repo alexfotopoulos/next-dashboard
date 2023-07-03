@@ -131,8 +131,8 @@ export default function Dashboard() {
                     <ProjectSectionTable />
                 </section>
                 <section className={styles.OrdersSection}>
-                    <div className={styles.OrdersHeader}>
-                        <header>
+                    <header className={styles.OrdersHeader}>
+                        <div>
                             <div className={styles.OrdersHeaderSection1}>
                                 <span className={styles.OrdersHeaderTitle}>
                                     Orders overview
@@ -153,8 +153,8 @@ export default function Dashboard() {
                                     24% this month
                                 </div>
                             </div>
-                        </header>
-                    </div>
+                        </div>
+                    </header>
                     <Timeline />
                 </section>
             </div>

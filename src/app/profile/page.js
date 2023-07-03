@@ -26,7 +26,7 @@ export default function Profile() {
         <div className={styles.page}>
             <div className={styles.backgroundImage}></div>
             <div className={styles.Profile}>
-                <div className={styles.ProfileHeader}>
+                <header className={styles.ProfileHeader}>
                     <div className={styles.ProfileHeaderName}>
                         <div className={styles.initialContainer}>
                             <div>R</div>
@@ -94,13 +94,13 @@ export default function Profile() {
                             <div>Settings</div>
                         </div>
                     </div>
-                </div>
+                </header>
                 <div className={styles.profileMain}>
                     <div className={styles.platformSettings}>
                         <div>
-                            <div className={styles.platformSettingsHeader}>
+                            <header className={styles.platformSettingsHeader}>
                                 Platform Settings
-                            </div>
+                            </header>
                             <div className={styles.settingsSubSection}>
                                 <div
                                     className={styles.platformSettingsSubHeader}
@@ -113,16 +113,18 @@ export default function Profile() {
                             </div>
                         </div>
                         <div className={styles.settingsSubSection}>
-                            <div className={styles.platformSettingsSubHeader}>
+                            <header
+                                className={styles.platformSettingsSubHeader}
+                            >
                                 APPLICATION
-                            </div>
+                            </header>
                             {applicationSettings.map((a) => (
                                 <Setting key={a} text={a} />
                             ))}
                         </div>
                     </div>
                     <div className={styles.profileInformation}>
-                        <div className={styles.profileInformationHeader}>
+                        <header className={styles.profileInformationHeader}>
                             <div>Profile Information</div>
                             <Image
                                 src="/icons/billing/buttons/pencil-fill.svg"
@@ -131,7 +133,7 @@ export default function Profile() {
                                 style={{ cursor: "pointer" }}
                                 alt="edit icon"
                             />
-                        </div>
+                        </header>
                         <p className={styles.profileInformationSummary}>
                             Hi, I’m Alec Thompson, Decisions: If you can’t
                             decide, the answer is no. If two equally difficult
@@ -184,9 +186,9 @@ export default function Profile() {
                         </div>
                     </div>
                     <div className={styles.conversations}>
-                        <div className={styles.conversationsHeader}>
+                        <header className={styles.conversationsHeader}>
                             Conversations
-                        </div>
+                        </header>
                         {conversations.map((c) => (
                             <Conversation
                                 key={c.name}
@@ -198,7 +200,7 @@ export default function Profile() {
                     </div>
                 </div>
                 <div>
-                    <div className={styles.projectsHeader}>Projects</div>
+                    <header className={styles.projectsHeader}>Projects</header>
                     <div className={styles.projectsContainer}>
                         {projects.map((p) => (
                             <Project

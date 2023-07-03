@@ -5,7 +5,7 @@ import Member from "../dashboard/projects/Member";
 
 export default function Project({ image, headerText, title, text }) {
     return (
-        <div className={styles.Project}>
+        <article className={styles.Project}>
             <Image
                 src={`/images/profile/projects/${image}`}
                 width={500}
@@ -13,7 +13,7 @@ export default function Project({ image, headerText, title, text }) {
                 className={styles.ProjectImage}
                 alt={`${title} image`}
             />
-            <div>{headerText}</div>
+            <header>{headerText}</header>
             <div className={styles.ProjectTitle}>{title}</div>
             <p className={styles.ProjectText}>{text}</p>
             <div className={styles.ButtonMembersContainer}>
@@ -25,6 +25,6 @@ export default function Project({ image, headerText, title, text }) {
                     <Member initial="D" color="#e9d8a6" />
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

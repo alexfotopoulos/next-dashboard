@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BillingTile({ icon, title, blurb, amount }) {
     return (
-        <div className={styles.billingTile}>
+        <article className={styles.billingTile}>
             <div className={styles.iconContainer}>
                 <Image
                     src={`/icons/billing/tiles/${icon}`}
@@ -17,6 +17,6 @@ export default function BillingTile({ icon, title, blurb, amount }) {
                 <div className={styles.blurb}>{blurb}</div>
             </div>
             <div className={styles.amount}>{amount}</div>
-        </div>
+        </article>
     );
 }

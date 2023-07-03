@@ -2,7 +2,7 @@ import styles from "./Conversation.module.scss";
 
 export default function Conversation({ initial, name, text }) {
     return (
-        <div className={styles.conversation}>
+        <article className={styles.conversation}>
             <div className={styles.conversationSection1}>
                 <div className={styles.imageContainer}>{initial}</div>
                 <div>
@@ -11,6 +11,6 @@ export default function Conversation({ initial, name, text }) {
                 </div>
             </div>
             <div className={styles.replyButton}>REPLY</div>
-        </div>
+        </article>
     );
 }

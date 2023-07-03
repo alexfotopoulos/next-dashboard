@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function TimelineItem({ icon, info, dateTime }) {
     return (
-        <div className={styles.TimelineItem}>
+        <article className={styles.TimelineItem}>
             <div className={styles.imageContainer}>
                 <Image
                     src={`/icons/dashboard/orders/timeline/${icon}`}
@@ -16,6 +16,6 @@ export default function TimelineItem({ icon, info, dateTime }) {
                 <div className={styles.info}>{info}</div>
                 <div className={styles.dateTime}>{dateTime}</div>
             </div>
-        </div>
+        </article>
     );
 }

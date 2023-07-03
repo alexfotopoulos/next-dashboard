@@ -70,7 +70,7 @@ export default function Billing() {
                         ))}
                     </div>
                     <div className={styles.paymentMethod}>
-                        <div
+                        <header
                             style={{
                                 display: "flex",
                                 justifyContent: "space-between",
@@ -81,7 +81,7 @@ export default function Billing() {
                                 Payment Method
                             </div>
                             <LngBtnBlack title="+ ADD NEW CARD" />
-                        </div>
+                        </header>
                         <div className={styles.methodContainer}>
                             {methods.map((m) => (
                                 <Method
@@ -94,12 +94,12 @@ export default function Billing() {
                     </div>
                 </div>
                 <div className={styles.section1subsection2}>
-                    <div className={styles.invoicesHeader}>
+                    <header className={styles.invoicesHeader}>
                         <div className={styles.invoicesHeaderTitle}>
                             Invoices
                         </div>
                         <BtnOutline title="VIEW ALL" />
-                    </div>
+                    </header>
                     <div className={styles.invoices}>
                         {invoices.map((i) => (
                             <Invoice
@@ -114,9 +114,9 @@ export default function Billing() {
             </section>
             <section className={styles.section2}>
                 <div className={styles.section2Subsection1}>
-                    <div className={styles.billingTitle}>
+                    <header className={styles.billingTitle}>
                         Billing Information
-                    </div>
+                    </header>
                     <div>
                         {billingInfo.map((b) => (
                             <BillingInfo
@@ -130,7 +130,7 @@ export default function Billing() {
                     </div>
                 </div>
                 <div className={styles.section2Subsection2}>
-                    <div className={styles.transactionsHeader}>
+                    <header className={styles.transactionsHeader}>
                         <div className={styles.transactionsHeaderTitle}>
                             Your Transactions
                         </div>
@@ -145,7 +145,7 @@ export default function Billing() {
                                 23 - 30 March 2020
                             </div>
                         </div>
-                    </div>
+                    </header>
                     <div style={{ marginBottom: "3rem" }}>
                         <div style={{ marginBottom: "3rem" }}>Newest</div>
                         {newestTransactions.map((n) => (

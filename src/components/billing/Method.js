@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Method({ icon, last4 }) {
     return (
-        <div className={styles.method}>
+        <article className={styles.method}>
             <div className={styles.infoContainer}>
                 <Image
                     src={`/icons/billing/methods/${icon}`}
@@ -26,6 +26,6 @@ export default function Method({ icon, last4 }) {
                 style={{ marginRight: "1rem", cursor: "pointer" }}
                 alt="edit icon"
             />
-        </div>
+        </article>
     );
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Invoice({ date, code, price }) {
     return (
-        <div className={styles.Invoice}>
+        <article className={styles.Invoice}>
             <div className={styles.InvoiceSection1}>
                 <span className={styles.date}>{date}</span>
                 <span className={styles.code}>{code}</span>
@@ -20,6 +20,6 @@ export default function Invoice({ date, code, price }) {
                     <span>PDF</span>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

@@ -4,8 +4,8 @@ import BtnEdit from "./buttons/BtnEdit";
 
 export default function BillingInfo({ name, company, email, vat }) {
     return (
-        <div className={styles.BillingInfo}>
-            <div className={styles.BillingInfoHeader}>
+        <article className={styles.BillingInfo}>
+            <header className={styles.BillingInfoHeader}>
                 <div>{name}</div>
                 <div className={styles.buttonContainer}>
                     <BtnDelete />
@@ -13,7 +13,7 @@ export default function BillingInfo({ name, company, email, vat }) {
                         <BtnEdit />
                     </div>
                 </div>
-            </div>
+            </header>
             <div>
                 <div className={styles.infoContainer}>
                     <div>Company Name</div>
@@ -28,6 +28,6 @@ export default function BillingInfo({ name, company, email, vat }) {
                     <div className={styles.data}>{vat}</div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

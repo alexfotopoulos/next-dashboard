@@ -4,7 +4,7 @@ import AuthorTableItem from "./AuthorTableItem";
 
 export default function AuthorTable({ thTitles, data }) {
     return (
-        <div className={styles.AuthorTableContainer}>
+        <article className={styles.AuthorTableContainer}>
             <TableHeader title="Authors Table" />
             <table className={styles.AuthorTable}>
                 <thead className={styles.AuthorTableHead}>
@@ -20,6 +20,6 @@ export default function AuthorTable({ thTitles, data }) {
                     ))}
                 </tbody>
             </table>
-        </div>
+        </article>
     );
 }

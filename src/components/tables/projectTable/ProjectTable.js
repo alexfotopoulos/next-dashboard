@@ -4,7 +4,7 @@ import ProjectTableItem from "./ProjectTableItem";
 
 export default function ProjectTable({ thTitles, data }) {
     return (
-        <div className={styles.ProjectTableContainer}>
+        <article className={styles.ProjectTableContainer}>
             <TableHeader title="Projects Table" />
             <table className={styles.ProjectTable}>
                 <thead className={styles.ProjectTableHead}>
@@ -20,6 +20,6 @@ export default function ProjectTable({ thTitles, data }) {
                     ))}
                 </tbody>
             </table>
-        </div>
+        </article>
     );
 }

@@ -4,7 +4,7 @@ import { ordersOverview } from "../../../../helpers/dummyData/dashboardPage/orde
 
 export default function Timeline() {
     return (
-        <div className={styles.Timeline}>
+        <article className={styles.Timeline}>
             <div className={styles.TimelineItemGroup}>
                 {ordersOverview.map((o) => (
                     <TimelineItem
@@ -15,6 +15,6 @@ export default function Timeline() {
                     />
                 ))}
             </div>
-        </div>
+        </article>
     );
 }
